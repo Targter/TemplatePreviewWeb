@@ -62,11 +62,7 @@ const NewCardcards = ({
       <NewCarditem2>
         <div className="card1" style={card1Style} id="exploreUrl">
           <div className="card1items1">{cardName}</div>
-          <div
-            className="card1items2"
-            style={{ marginRight: "20px", fontSize: "18px" }}
-            onClick={toggleItemsToShow}
-          >
+          <div className="card1items2" onClick={toggleItemsToShow}>
             {itemsToShow === 4 ? "Show more" : "Show less"}
           </div>
         </div>
@@ -82,7 +78,7 @@ const NewCardcards = ({
           }}
         >
           {imageUrls.slice(0, itemsToShow).map((imgsrc, index) => (
-            <Caardcard key={index}>
+            <Caardcard className="designcardcontainer " key={index}>
               <img
                 src={imgsrc.CardThumNailUrl}
                 alt=""
@@ -123,4 +119,9 @@ const Caardcard = styled.div`
   margin-bottom: 20px;
   margin-right: 20px;
   margin-top: 30px;
+
+  @media screen and (max-width: 480px) {
+    width: 240px;
+    height: 140px;
+  }
 `;

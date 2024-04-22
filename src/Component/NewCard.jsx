@@ -34,19 +34,8 @@ const NewCard = () => {
     <>
       <MaincontainerCard>
         <NewCarditem1>
-          <div className="Heading" style={{ fontSize: "3rem" }}>
-            ThinkbeforeCode Community collections
-          </div>
-          <div
-            className="NewCarditem1des"
-            style={{
-              marginTop: "25px",
-              fontSize: "1.5rem",
-              width: "50%",
-              textAlign: "center",
-              lineHeight: "35px",
-            }}
-          >
+          <div className="Heading">ThinkbeforeCode Community collections</div>
+          <div className="NewCarditem1des">
             Check out collections of some of our favorite design files, plugins,
             widgets, and creators from Figma Community.
           </div>
@@ -54,7 +43,6 @@ const NewCard = () => {
 
         {NamesofCard.map((cardname, index) => (
           <NewCardcards
-           
             key={index}
             cardName={cardname}
             imageUrls={AllCards.slice(

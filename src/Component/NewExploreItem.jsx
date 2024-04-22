@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Footer from "./Footer";
 
-
 const NewExploreitem = () => {
   const location = useLocation();
   const { data } = location.state || { data: {} };
@@ -115,6 +114,13 @@ const ImageBox = styled.div`
   alignitems: center;
   padding: 25px;
   padding-top: 40px;
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
 `;
 
 // const previewContainer = styled.div`
@@ -129,8 +135,17 @@ const ShowimageName = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    height: 40vh;
+  }
 `;
 const ShowImageDetails = styled.div`
   width: 70%;
   height: 80vh;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 30vh;
+  }
 `;

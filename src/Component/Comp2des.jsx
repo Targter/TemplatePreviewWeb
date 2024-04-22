@@ -25,7 +25,7 @@ const Comp2des = () => {
 
             style={{ color: "white", textDecoration: "none" }}
           >
-            <img src="explorebtn.png" onClick={MovetoexploreUrl}></img>
+            <img src="explorebtn.png" onClick={MovetoexploreUrl} className="explorbtnimg"></img>
           </Link>
         </div>
       </div>

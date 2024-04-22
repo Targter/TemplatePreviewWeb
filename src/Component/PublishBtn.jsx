@@ -31,7 +31,7 @@ const Publish = () => {
   };
   return (
     <>
-      <div class="container py-4">
+      <div class=" py-4 overflow-hidden" style={{ width: "100%" }}>
         <header class="pb-3 mb-4 border-bottom">
           <a
             href="/"
@@ -58,28 +58,14 @@ const Publish = () => {
         </header>
 
         <div class=" mb-4 bg-body-tertiary rounded-3">
-          <div
-            class="container d-flex justify-content-center align-items-center"
-            style={{
-              backgroundColor: "#cfe2ff",
-              color: "white",
-              height: "162px",
-              overflow: "hidden",
-              position: "relative",
-            }}
-          >
+          <div class=" d-flex justify-content-center align-items-center publicitemcontainersvg1">
             <svg
               width="644"
               height="366"
               viewBox="0 0 844 366"
               fill="none"
+              className="publictiemsvg"
               xmlns="http://www.w3.org/2000/svg"
-              style={{
-                position: "absolute",
-                top: "-100px",
-                left: "-300px",
-                transform: "rotate(90deg)",
-              }}
             >
               <line
                 x1="35.2456"
@@ -304,24 +290,14 @@ const Publish = () => {
                 stroke-linecap="square"
               ></path>
             </svg>
-            <div
-              className="publishitemhere"
-              style={{ fontSize: "40px", color: "black" }}
-            >
-              Publish Your Content here
-            </div>
+            <div className="publishitemhere">Publish Your Content here</div>
             <svg
               width="442"
               height="328"
               viewBox="0 0 672 328"
               fill="none"
+              className="publicitemsvg2"
               xmlns="http://www.w3.org/2000/svg"
-              style={{
-                position: "absolute",
-                top: "-100px",
-                right: "-150px",
-                transform: "rotate(-90deg)",
-              }}
             >
               <line
                 x1="93.0057"
@@ -635,16 +611,13 @@ const Publish = () => {
           </div>
         </div>
 
-        <div class="row align-items-md-stretch">
-          <div class="col-md-6">
-            <div class="h-100 p-5 text-bg-dark rounded-3 d-flex flex-column justify-content-center">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6 " style={{ width: "600px" }}>
+            <div class="h-100 p-5 text-bg-dark rounded-3 d-flex flex-column justify-content-center dragdropBox">
               <h2>Drag and dropcontainer</h2>
 
               <div
-                style={{
-                  width: "500px",
-                  height: "auto",
-                }}
+                className="dragdropcontainer"
                 onDragOver={handleDragOver}
                 onDrop={handleDrop}
               >
@@ -684,9 +657,9 @@ const Publish = () => {
           </div>
 
           {/*  */}
-          <div class="col-md-6">
-            <div class="h-100 p-5 bg-body-info border rounded-3 text-white">
-              <p style={{ fontSize: "2rem" }}>Publish Your file </p>
+          <div class="col-md-6" style={{ width: "600px" }}>
+            <div class="h-100 p-5 bg-body-info border rounded-3 text-white publishdropbox">
+              <p className="publishyourfile">Publish Your file </p>
               <button
                 class="btn btn-info"
                 type="button"

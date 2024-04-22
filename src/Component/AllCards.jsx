@@ -65,4 +65,9 @@ const Card2 = styled.div`
   background-color: grey;
   margin-bottom: 20px;
   position: relative;
+
+  @media screen and (max-width: 480px) {
+    width: 240px;
+    height: 140px;
+  }
 `;

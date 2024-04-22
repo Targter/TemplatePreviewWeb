@@ -93,14 +93,9 @@ const Comp3des = () => {
             <div className="communitydropdown">
               <select
                 name="All"
+                className="AllProductDropdownbtn"
                 id="communitydropdownbtn"
                 onChange={HandleonChange}
-                style={{
-                  background: "black",
-                  color: "white",
-                  outline: "none",
-                  border: "none",
-                }}
               >
                 <option value="All">All Products</option>
                 <option value="Education">Education</option>
@@ -111,8 +106,8 @@ const Comp3des = () => {
             <div className="communitydropdown">
               <select
                 name="Paidfree"
+                className="AllProductFreePaidDropdownbtn"
                 id="communitydropdownbtnpaidfree"
-                style={{ marginLeft: "20px" }}
               >
                 <option value="PaidFree">All</option>
                 <option value="Paid">Paid</option>

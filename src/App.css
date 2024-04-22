@@ -265,9 +265,216 @@
   .fundyourcreativitycontainer{
     width: 300px
   }
+  .publishdropbox{
+    margin-top: 20px
+  }
 };
   
 
+.Heading{
+  font-size: 3rem;
+}
+
+.NewCarditem1des{
+  margin-top: 25px;
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+  line-height: 35px,
+}
+
+.card1items2{
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.AllProductDropdownbtn{
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+}
+.AllProductFreePaidDropdownbtn{
+  margin-left: 20px;
+}
+.publicitemcontainersvg1{
+  background-color: #cfe2ff;
+  color: white;
+  height: 162px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.publictiemsvg{
+  position: absolute;
+  top: -100px;
+  left: -300px;
+transform: rotate(90deg)
+}
+.publicitemsvg2{
+  position: absolute;
+  top: -100px;
+  right: -150px;
+  transform: rotate(-90deg)
+}
+.publishitemhere{
+  font-size: 40px;
+  color: black;
+  z-index: 20;
+}
+.dragdropcontainer{
+  width: 500px;
+  height: auto;
+}
+.publishyourfile{
+  font-size: 2rem;
+}
+.footercontainer{
+  margin-top: 120px;
+          position: relative;
+          bottom: 0;
+          overflow: hidden;
+          width: 100%;
+          height: 400px;
+          z-index:  100,
+}
+
+.heightRow{
+  margin-top: 40px;
+              display: flex;
+              justify-content: center;
+              height: 230px;
+}
+
+
+.copyrightcontainer{
+  color: white;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  width: 100%;
+  /* background:yellow; */
+}
+.copyrightitem{
+  margin-top: 20px;
+}
+
 
 /*  */
+@media screen and (max-width:480px) {
+  
+  .item1seeAll{
+    font-size: 14px;
+    outline: none;
+    border: none;
+    color: white;
+    /* background-color:blue; */
+    margin-right: 30px;
+  }
+  .item1Discover{
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .Heading{
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 
+  .NewCarditem1des{
+    width: 80%;
+    font-size:  1.2rem;
+    line-height: 25px;
+  }
+  .card1items1{
+    width: 150px;
+    font-size: 14px;
+  }
+  .card1items2{
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .cont2item1{
+    font-size: 16px;
+    padding-left: 30px;
+  }
+
+  .AllProductDropdownbtn{
+    font-size: 1rem;
+  }
+
+  .AllProductFreePaidDropdownbtn{
+    font-size: 1rem;
+  }
+
+  .explorebtn{
+    width: 150px;
+    height: 40px;
+  }
+  .explorbtnimg{
+    width: 100%;
+    height: 100%;
+  }
+  .publictiemsvg{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: -80px;
+    /* background-color: red; */
+  }
+  .publicitemsvg2{
+    width: 400px;
+    height: 100px;
+  position: absolute;
+  top: -60px;
+  right: -180px;
+  /* background-color: blue; */
+  }
+  .publishitemhere{
+    height: 100px;
+    width: 200px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 30px;
+    /* background-color: red; */
+  }
+.dragdropBox{
+  width: 300px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  
+}
+.publishdropbox{
+  width: 300px;
+  /* background-color: red;
+  margin-right: 20px; */
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.publishyourfile{
+  font-size: 1.2rem
+;  margin-bottom: 20px;
+}
+.col-md-6 {
+  width: 100%;
+}
+.footercontainer{
+  height: auto;
+}
+.heightRow{
+  height: auto;
+  width: auto;
+  margin-left: 20px;
+  padding-left: 40px;
+  display: flex;
+  margin-top: 0;
+  /* flex-wrap: wrap; */
+  /* background-color: green; */
+}.copyrightitem{
+  width: 100%;
+  /* padding-left: ; */
+  /* background-color: red; */
+}
+}
